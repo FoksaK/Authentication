@@ -1,0 +1,38 @@
+﻿@page
+
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@model PokusAut7.LoginModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Logggin</title>
+</head>
+<body>
+
+    <h3>Login Form</h3>
+    <p>@Model.Msg</p>
+    <form method="post">
+        <table>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" asp-for="Username" /></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" asp-for="Password" /></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
